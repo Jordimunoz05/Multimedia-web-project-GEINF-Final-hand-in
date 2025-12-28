@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CoatOfArms from "./CoatOfArms";
+import { asset } from "../utils/asset";
 
 const Hero = () => {
+  const bg = asset("/media/img/layout/vidreres-2.png");
+  const audioSrc = asset("/media/vidreres_sound.mp3");
   return (
     <section
       style={{
-        background:
-          "url(/media/img/layout/vidreres-2.png) no-repeat center center",
+        background: `url(${bg}) no-repeat center center`,
         backgroundSize: "cover",
         padding: "10rem 0", // Increased padding for "enlarged" feel
         textAlign: "center",
@@ -55,7 +57,7 @@ const Hero = () => {
               Listen to the atmosphere:
             </p>
             <audio controls style={{ width: "100%", borderRadius: "30px" }}>
-              <source src="/media/vidreres_sound.mp3" type="audio/mpeg" />
+              <source src={audioSrc} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
