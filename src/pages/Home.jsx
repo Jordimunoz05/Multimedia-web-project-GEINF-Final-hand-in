@@ -1,4 +1,5 @@
 import React from "react";
+import { asset } from "../utils/asset";
 import Hero from "../components/Hero";
 import HoverCard from "../components/HoverCard";
 import InfoSection from "../components/InfoSection";
@@ -10,7 +11,6 @@ import {
   FaNewspaper,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { asset } from "../utils/asset";
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);
@@ -180,58 +180,56 @@ const Home = () => {
             }}
           >
             <HoverCard
-              image={asset("/media/img/fairs/festa-petita.jpg")}
+              image="/media/img/fairs/festa-petita.jpg"
               title="Festa Petita"
               subtitle="Celebrating the town's patrons, Saint Iscle and Saint Victoria, on November 17th."
               boldText="Also known as the Festival of Saint Iscle and Saint Victoria, it gathers activities for the general public: concerts, cinema, sardanes, chocolate, and children's activities."
               description="It is a great opportunity to enjoy the cultural and festive activity of the municipality together."
             />
             <HoverCard
-              image={asset("/media/img/fairs/ranxoVIDRERES.jpg")}
+              image="/media/img/fairs/ranxoVIDRERES.jpg"
               title="El Ranxo"
               subtitle="Probably the most important festival and tradition in Vidreres, celebrated every Carnival Tuesday."
               boldText="A massive collective stew event involving the whole town: butchers, farmers, and neighbors contributing ingredients like sausages and vegetables."
               description="Ranchers cook about thirty 100-liter pots to satisfy the demand. The preparation involves a parade to collect ingredients, and on the day itself, a grand meal is served to everyone."
             />
             <HoverCard
-              image={asset("/media/img/fairs/festa-major-vidreres.jpg")}
+              image="/media/img/fairs/festa-major-vidreres.jpg"
               title="Festa Major"
               subtitle="The main town festival, celebrated on the first weekend of September, filling the streets with people."
               boldText="Highlights include the traditional election of the Heir and Heiress, the Gala Ball, and the Correbous."
               description="After waiting through the hot month of August, locals prepare for the biggest party of the town, an excellent moment to meet family and friends."
             />
             <HoverCard
-              image={asset("/media/img/fairs/FIRACERVESAVIDRERES.jpg")}
+              image="/media/img/fairs/FIRACERVESAVIDRERES.jpg"
               title="Beer Fair"
               subtitle="Held in early October at Lluís Companys Square."
               boldText="A meeting point for lovers of this quality local beverage, aiming to be a space for discovery and promotion."
               description="It serves as a forum to meet manufacturers, discover brands, and promote the market and culture of craft beer, which is becoming increasingly popular."
             />
             <HoverCard
-              image={asset(
-                "/media/img/fairs/Vidreres_fira_antiguitats_2024.jpg"
-              )}
+              image="/media/img/fairs/Vidreres_fira_antiguitats_2024.jpg"
               title="Antiques Fair"
               subtitle="Gathers a large collective of antique dealers and collectors from all over Catalonia at the Correbous field."
               boldText="Offers a wide range of ancient pieces such as clocks, coins, candelabras, furniture, tableware, and copper items."
               description="Open to everyone, it's a place to enjoy old objects and find that special item you've been looking for."
             />
             <HoverCard
-              image={asset("/media/img/fairs/mercat-de-segona-mA.jpg")}
+              image="/media/img/fairs/mercat-de-segona-mA.jpg"
               title="Second Hand Market"
               subtitle="Buying and selling of second-hand products."
               boldText="A project by the City Council to contribute to the environment, offer neighbors a chance to sell unneeded items, and attract visitors."
               description="It allows locals to earn extra income or exchange goods while visitors enjoy the town's shops, bars, and restaurants."
             />
             <HoverCard
-              image={asset("/media/img/fairs/festa-de-les-flors-ambient.jpg")}
+              image="/media/img/fairs/festa-de-les-flors-ambient.jpg"
               title="Flower Festival"
               subtitle="A festival held on a weekend at the end of May to welcome the good weather."
               boldText="Decorates emblematic spaces like Plaça Primer d’Octubre with floral arrangements made by neighbors and local entities."
               description="Days full of color and light offering technical talks, visits, workshops, and demonstrations revolving around plants and flowers."
             />
             <HoverCard
-              image={asset("/media/img/fairs/FESTIVAL-JAZZ.jpg")}
+              image="/media/img/fairs/FESTIVAL-JAZZ.jpg"
               title="Jazz Festival"
               subtitle="For three days, the town becomes the region's jazz center."
               boldText="Dedicated to promoting jazz and honoring the founders of the Vidreres jazz club from the 50s, featuring performances by groups like La Vella Dixieland."
