@@ -1,0 +1,94 @@
+:root {
+  /* Vidreres Palette */
+  --color-primary: #FFD700;
+  /* Yellow */
+  --color-secondary: #111111;
+  /* Black */
+  --color-text: #333333;
+  --color-background: #FFFFFF;
+  --color-white: #FFFFFF;
+
+  /* Spacing & Layout */
+  --spacing-unit: 1rem;
+  --container-width: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    /* Adjust based on header height */
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    transition: 0.3s;
+    z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
