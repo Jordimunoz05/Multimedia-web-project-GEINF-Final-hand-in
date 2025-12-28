@@ -13,7 +13,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Guided Tour: Torre d'en Llobet",
       price: 5,
       type: "paid",
-      image: asset("/media/img/historic/torre-llobet.jpg"),
+      image: "/media/img/historic/torre-llobet.jpg",
       description:
         "A guided historical tour inside the fortified farmhouse and its defense tower.",
     },
@@ -22,7 +22,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Bunker History Walk",
       price: 8,
       type: "paid",
-      image: asset("/media/img/historic/BUNQUER_BATLLOSERA.JPG"),
+      image: "/media/img/historic/BUNQUER_BATLLOSERA.JPG",
       description:
         "Explore the Civil War bunkers and air raid shelters with a historian.",
     },
@@ -31,7 +31,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Jazz Festival Day Pass",
       price: 15,
       type: "paid",
-      image: asset("/media/img/fairs/FESTIVAL-JAZZ.jpg"),
+      image: "/media/img/fairs/FESTIVAL-JAZZ.jpg",
       description:
         "Access to all concerts and workshops for one day of the festival.",
     },
@@ -41,7 +41,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Nature Walk: Bosc d'en Puig",
       price: 0,
       type: "book",
-      image: asset("/media/img/natural/bosc-puig.png"),
+      image: "/media/img/natural/bosc-puig.png",
       description:
         "Join a ranger-led group walk through the pine forests. Registration required.",
     },
@@ -50,7 +50,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Ranxo Evaluation Jury",
       price: 0,
       type: "book",
-      image: asset("/media/img/fairs/ranxoVIDRERES.jpg"),
+      image: "/media/img/fairs/ranxoVIDRERES.jpg",
       description:
         "Be part of the popular jury tasting the traditional stew. Limited spots.",
     },
@@ -60,7 +60,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Self-Guided Old Town Tour",
       price: 0,
       type: "plan",
-      image: asset("/media/img/historic/Vidreres-Esglesia-parroquial-01.jpg"),
+      image: "/media/img/historic/Vidreres-Esglesia-parroquial-01.jpg",
       description:
         "Download our map and audio guide to explore the historic center at your own pace.",
       mapUrl:
@@ -71,7 +71,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Cycling Route: Els Pantans",
       price: 0,
       type: "plan",
-      image: asset("/media/img/natural/pantansllobet.jpg"),
+      image: "/media/img/natural/pantansllobet.jpg",
       description:
         "A scenic 10km cycling route passing by the three reservoirs.",
       mapUrl:
@@ -82,7 +82,7 @@ const Activities = ({ cart, addToCart, removeFromCart, decreaseQuantity }) => {
       title: "Saint Martin's Footprint Hike",
       price: 0,
       type: "plan",
-      image: asset("/media/img/natural/lapetjadesantmarti.jpg"),
+      image: "/media/img/natural/lapetjadesantmarti.jpg",
       description:
         "A hiking trail leading to the legendary rock with amazing coastal views.",
       mapUrl:

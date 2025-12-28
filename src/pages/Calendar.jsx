@@ -9,7 +9,7 @@ const Calendar = () => {
       title: "Start of Christmas Lights",
       location: "Town Square",
       time: "18:00",
-      image: asset("/media/img/calendar/LLUMSNADALVIDRERES.jpg"),
+      image: "/media/img/calendar/LLUMSNADALVIDRERES.jpg",
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Calendar = () => {
       title: "Traditional Market",
       location: "Old Town",
       time: "10:00 - 20:00",
-      image: asset("/media/img/calendar/MERCATRADICIONAL.jpeg"),
+      image: "/media/img/calendar/MERCATRADICIONAL.jpeg",
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Calendar = () => {
       title: "Winter Solstice Concert",
       location: "City Hall",
       time: "21:00",
-      image: asset("/media/img/calendar/CONCERTNADALVIDRERES.jpg"),
+      image: "/media/img/calendar/CONCERTNADALVIDRERES.jpg",
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const Calendar = () => {
       title: "Three Kings Parade",
       location: "Main Streets",
       time: "17:00",
-      image: asset("/media/img/calendar/REISVIDRERES.jpg"),
+      image: "/media/img/calendar/REISVIDRERES.jpg",
     },
   ];
 
