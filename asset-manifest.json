@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Multimedia-web-project-GEINF-Final-hand-in/static/css/main.3c0909ab.css",
-    "main.js": "/Multimedia-web-project-GEINF-Final-hand-in/static/js/main.97c4b8f7.js",
+    "main.js": "/Multimedia-web-project-GEINF-Final-hand-in/static/js/main.2838260f.js",
     "index.html": "/Multimedia-web-project-GEINF-Final-hand-in/index.html",
     "main.3c0909ab.css.map": "/Multimedia-web-project-GEINF-Final-hand-in/static/css/main.3c0909ab.css.map",
-    "main.97c4b8f7.js.map": "/Multimedia-web-project-GEINF-Final-hand-in/static/js/main.97c4b8f7.js.map"
+    "main.2838260f.js.map": "/Multimedia-web-project-GEINF-Final-hand-in/static/js/main.2838260f.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0909ab.css",
-    "static/js/main.97c4b8f7.js"
+    "static/js/main.2838260f.js"
   ]
 }
