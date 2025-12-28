@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "../components/Hero";
 import HoverCard from "../components/HoverCard";
 import InfoSection from "../components/InfoSection";
-import { asset } from "../utils/asset";
 import {
   FaFacebook,
   FaYoutube,
@@ -11,7 +10,7 @@ import {
   FaNewspaper,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { asset } from "../utils/assets";
+import { asset } from "../utils/asset";
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);

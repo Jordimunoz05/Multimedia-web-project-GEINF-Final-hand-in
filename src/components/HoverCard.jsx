@@ -30,7 +30,7 @@ const HoverCard = ({
         }}
       >
         <img
-          src={imageSrc}
+          src={imgSrc}
           alt={title}
           style={{
             width: "100%",
@@ -68,7 +68,7 @@ const HoverCard = ({
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <img
-          src={imageSrc}
+          src={imgSrc}
           alt={title}
           style={{
             width: "100%",
