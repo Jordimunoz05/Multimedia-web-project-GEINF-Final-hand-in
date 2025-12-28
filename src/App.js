@@ -1,21 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Activities from './pages/Activities';
-import MySelection from './pages/MySelection';
-import Calendar from './pages/Calendar';
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Activities from "./pages/Activities";
+import MySelection from "./pages/MySelection";
+import Calendar from "./pages/Calendar";
 
 function App() {
   const [cart, setCart] = React.useState([]);
 
   const addToCart = (activity) => {
-    setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === activity.id);
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((item) => item.id === activity.id);
       if (existingItem) {
-        return prevCart.map(item =>
+        return prevCart.map((item) =>
           item.id === activity.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
@@ -26,16 +26,16 @@ function App() {
   };
 
   const removeFromCart = (id) => {
-    setCart(prevCart => prevCart.filter(item => item.id !== id));
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
   const decreaseQuantity = (activity) => {
-    setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === activity.id);
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((item) => item.id === activity.id);
       if (existingItem.quantity === 1) {
-        return prevCart.filter(item => item.id !== activity.id);
+        return prevCart.filter((item) => item.id !== activity.id);
       }
-      return prevCart.map(item =>
+      return prevCart.map((item) =>
         item.id === activity.id
           ? { ...item, quantity: item.quantity - 1 }
           : item
@@ -45,7 +45,10 @@ function App() {
 
   return (
     <Router>
-      <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <div
+        className="App"
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
         <Header />
         <main style={{ flex: 1 }}>
           <Routes>
